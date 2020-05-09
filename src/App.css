@@ -17,10 +17,9 @@ input:-webkit-autofill:focus {
   pointer-events: none;
 }
 
-@media screen and (max-width: 800px) {
-  .image-grid {
-    width: 120%
-  }
+
+.image-grid {
+  width: 120%
 }
 
 @media (prefers-reduced-motion: no-preference) {
