@@ -107,7 +107,11 @@ const Search = () => {
               <div class="-mb-20 mt-4 z-10">
                 <img
                   class="object-cover h-48 w-48 rounded-full mx-auto mb-4 border-white border-8"
-                  src={`https://image.tmdb.org/t/p/w500/${actorData?.profile_path}`}
+                  src={
+                    actorData?.name === "Nicolas Cage"
+                      ? "https://media3.giphy.com/media/bn0zlGb4LOyo8/giphy.gif?cid=ecf05e47fe342980e7f8bd4ff2be8b4302a17f1a72e1d71f&rid=giphy.gif"
+                      : `https://image.tmdb.org/t/p/w500/${actorData?.profile_path}`
+                  }
                 ></img>
               </div>
               <div class="bg-gray-200 pt-20 p-8">
