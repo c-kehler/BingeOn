@@ -123,6 +123,11 @@ const Search = () => {
                 <div>
                   That's {minToDays(runtime.reduce((a, b) => a + b, 0))}
                 </div>
+                <div>
+                  {actorData?.name === "Helena Bonham Carter"
+                    ? "She has no Oscar wins, unlike Nicolas Cage"
+                    : ""}
+                </div>
               </div>
             </div>
           </>
@@ -134,7 +139,7 @@ const Search = () => {
         {credits?.data?.credits?.cast.map((value) =>
           value.poster_path ? (
             <img
-              class="w-20 opacity-25"
+              class="w-20 opacity-25 md:h-auto h-40"
               src={`https://image.tmdb.org/t/p/w500/${value.poster_path}`}
             ></img>
           ) : (
