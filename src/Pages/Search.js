@@ -65,7 +65,7 @@ const Search = () => {
     return (<p> <span class="font-bold">{Days}</span> days, <span class="font-bold">{hours}</span> hours and <span class="font-bold">{minutes}</span> minutes</p>);
   }
   return (
-    <div class="w-full h-full bg-gray-100 pt-20">
+    <div class="w-full fixed h-full bg-gray-100 pt-20">
       <div class="z-10 relative max-w-sm rounded overflow-hidden shadow-lg mx-auto w-full md:w-2/3 bg-white">
         <form onSubmit={onSearch}>
           <div>
@@ -130,7 +130,7 @@ const Search = () => {
           ""
         )}
       </div>
-      <div class="absolute image-grid overflow-hidden z-0 h-screen top-0 flex flex-wrap">
+      <div class="absolute image-grid overflow-hidden z-0 h-full top-0 flex flex-wrap">
         {credits?.data?.credits?.cast.map((value) =>
           value.poster_path ? (
             <img
